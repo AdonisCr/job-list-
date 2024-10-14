@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'League' ;
+    src: url(LeagueSpartan-VariableFont_wght.ttf);
+}
+:root{
+    --primary-color:#5ba4a4;
+    --background-color:hsl(180, 52%, 96%);
+    --tablet-color:hsl(180, 31%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    list-style: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 500;
+}
+h4{
+    font-weight: 700;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+/**************************************************/
+body{
+    width: 100%;
+    background-color: var(--background-color);
+    font-family: 'League';
+}
+header{
+width: 100%;
+}
+header img{
+    width: 100%;
+    background-color: var(--primary-color) ;
+}
+.img_cache2{
+    display: none;
+}
+    /*******/
+main{
+   width: 100%;
+   margin-top: 50px;
+   margin: auto;
+   justify-content: center;
+}
+.item{
+    display: flex;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding:  2%;
+    border-radius: 10px;
+    box-shadow: 3px 8px 10px 5px #a9a9a93a;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 30px;
+}
+.item_content1{
+    display: flex;
+    gap: 5px;
+}
+.item_content11{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.item_content11 a{
+    padding: 0px 12px;
+    color: var(--tablet-color);
+    background-color: var(--primary-color);
+    border-radius: 30px;
+}
+.item_content{
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    align-items: center;justify-content: right;
+}
+.item_content a{
+    padding: 8px;
+    background-color: var(--background-color);
+    border-radius: 4px
+}
+
+.language{
+    margin-left: 5px;
+
+} 
+
+
+.tool{
+    margin-left: 10px;
+
+}
+.selected-filters{
+    width: 90%;
+    height: 80px;
+    background-color: white;
+    position: relative;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    align-items: center; 
+    text-align: center;
+    top: -50px;
+    border-radius: 10px;
+    box-shadow: 3px 8px 10px 5px #a9a9a93a;
+    padding-left: 30px;
+}
+.filter{
+    padding: 8px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    padding-right: 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+.remove{
+    padding: 8px;
+    background-color: rgba(134, 134, 134, 0.562);
+    border-radius: 4px;
+    cursor: pointer;
+}
+/****************responsiviter**********************/
+@media screen and (max-width:500px) {
+    .img_cache2{
+        display: block;
+    }
+    .img_cache1{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+        text-align:left ;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: left;
+        border-bottom: solid .2px rgb(35, 35, 35);
+        margin-bottom: 5px;
+    }  
+    .item_content{
+        align-items: center;
+        justify-content: left;
+        flex-wrap: wrap;
+        width: 100%;
+    }  
+};
+
+@media screen and (max-width:870px) {
+    main{
+        display: flex;
+        justify-content: flex-start;
+    }
+ 
+    .item{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    .content{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid .5px darkgray;
+        margin-bottom: 6px;
+        padding-bottom: 3px;
+        
+    }
+    .item_content{
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
